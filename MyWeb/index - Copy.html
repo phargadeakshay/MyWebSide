@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="" style="width: 150px; height: 20px;">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/1600x500/?cars" alt="">
+            </div> -->
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="min-height: 30vh; margin-top: 20px; margin-left:20px;">
+                <div class="carousel-item active">
+                    <img src="https://source.unsplash.com/1600x500/?mobile" class="d-block w-10" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1600x500/?cars" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1600x500/?FIFA" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Product Card</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+                crossorigin="anonymous">
+            <style>
+                #light {
+                    color: rgb(24, 1, 1);
+                    background-color: #faf8f8;
+                }
+
+                #dark {
+                    background-color: rgb(223, 195, 41);
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="row mt-5" id="light">
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card1">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(1)" id="check1" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cars">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name1">Car</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p1">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q1" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card2">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(2)" id="check2" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cars">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name2">Car</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p2">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q2" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card3">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(3)" id="check3" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cars">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name3">Car</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p3">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q3" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card4">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(4)" id="check4" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cars">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name4">Car</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p4">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q4" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 " id="dark">
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card5">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(5)" id="check5" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?food">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name5">Food</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p5">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q5" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card6">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(6)" id="check6" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?food">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name6">Food</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p6">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q6" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card7">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(7)" id="check7" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?food">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name7">Food</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p7">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q7" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card8">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(8)" id="check8" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?food">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name8">Food</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p8">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q8" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 " id="light">
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card9">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(9)" id="check9" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cricket">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name9">Cricket</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p9">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q9" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card10">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(10)" id="check10" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cricket">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name10">Cricket</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p10">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q10" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card11">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(11)" id="check11" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cricket">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name11">Cricket</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p11">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q11" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card12">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(12)" id="check12" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?cricket">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name12">Cricket</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p12">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q12" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 " id="dark">
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card13">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(13)" id="check13" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?books">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name13">Books</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p13">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q13" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card14">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(14)" id="check14" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?books">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name14">Books</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p14">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q14" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card15">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(15)" id="check15" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?hacker">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name15">Hacker</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p15">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q15" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-fluid border border-dark rounded col-3 p-0" id="card16">
+                        <div class="card-body">
+                            <div class="text-center mt-0"><input type="checkbox" onclick="product(16)" id="check16" />
+                            </div>
+                            <img class="card-img" src="https://source.unsplash.com/160x160/?hacker">
+                            <div class="card-body">
+                                <span>Name: </span> <span id="name16">Hacker</span><br>
+                                <span>Desciption: </span> Mug<br>
+                                <span>Price: </span><span id="p16">100</span><br>
+                                <div class="row">
+                                    <div class="col-2"><span>Qty:</span></div>
+                                    <div class="col-6"><input value="1" id="q16" class="form-control" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+                <h4>Ordered Item</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <table id="tab" class="">
+
+                        </table>
+                    </div>
+
+                    <br>
+                </div>
+                <hr>
+                <button type="button" class="btn btn-success" onclick="totalSum()">Display Total Amount for
+                    Shopping</button><br><br><br><br><br>
+            </div>
+            <script>
+
+                var sum = 0;
+                var count = 0;
+
+                function product(a) {
+                    var c = document.getElementById('check' + a)
+                    if (c.checked) {
+
+                        document.getElementById('q' + a).disabled = true
+
+                        document.getElementById('card' + a).style.backgroundColor = '#F4D160'
+                        var ele = document.createElement("tr")
+                        ele.id = "row" + a
+                        document.getElementById('tab').appendChild(ele)
+
+                        var el = document.createElement('td')
+                        el.id = a
+                        document.getElementById('row' + a).appendChild(el)
+
+                        var el = document.createElement('td')
+                        el.id = "item" + a
+                        document.getElementById('row' + a).appendChild(el)
+
+                        var el = document.createElement('td')
+                        el.id = "price" + a
+                        document.getElementById('row' + a).appendChild(el)
+
+                        var el = document.createElement('td')
+                        el.id = "quantity" + a
+                        document.getElementById('row' + a).appendChild(el)
+
+                        var el = document.createElement('td')
+                        el.id = "total" + a
+                        document.getElementById('row' + a).appendChild(el)
+
+                        var name = document.getElementById("name" + a)
+                        var price = document.getElementById("p" + a)
+                        var qt = document.getElementById("q" + a).value
+                        var pr = parseInt(price.textContent) * qt
+                        sum += pr
+                        count++
+                        document.getElementById(a).innerHTML = count + '.&emsp;'
+                        document.getElementById("item" + a).innerHTML = name.textContent + '&emsp;'
+                        document.getElementById("price" + a).innerHTML = price.textContent + '&emsp;'
+                        document.getElementById("quantity" + a).innerHTML = qt + '&emsp;'
+                        document.getElementById('total' + a).innerHTML = pr + "&emsp;"
+
+                    } else {
+                        count--
+                        var price = document.getElementById("p" + a)
+                        var qt = document.getElementById("q" + a).value
+                        var pr = parseInt(price.textContent) * qt
+                        sum -= pr
+                        document.getElementById('q' + a).disabled = false
+                        document.getElementById(a).innerHTML = count + '.&emsp;'
+                        document.getElementById('tab').removeChild(document.getElementById('row' + a))
+                        if (1 <= a && a <= 4 || 9 <= a && a <= 12) {
+                            document.getElementById('card' + a).style.backgroundColor = '#C2FFD9'
+
+                        } else if (5 <= a && a <= 8 || 13 <= a && a <= 16) {
+                            document.getElementById('card' + a).style.backgroundColor = '#seagreen'
+
+                        }
+                    }
+                }
+                function totalSum() {
+                    alert("Total sum: " + sum)
+                }
+
+            </script>
+        </body>
+
+        </html>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
